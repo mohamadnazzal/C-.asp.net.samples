@@ -1,0 +1,5 @@
+        public ActionResult Index()
+        { 
+            var userid = System.Web.HttpContext.Current.User.Identity.GetUserId();
+            return View(db.postTables.Where(a=>a.iuser==userid).ToList());
+        }
