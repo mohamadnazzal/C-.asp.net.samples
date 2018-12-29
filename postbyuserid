@@ -1,3 +1,7 @@
+post user controller - asp.net
+
+
+
         public ActionResult Index()
         { 
             var userid = System.Web.HttpContext.Current.User.Identity.GetUserId();
